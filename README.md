@@ -4,9 +4,19 @@ MTProxyTLS一键安装绿色脚本
 
 
 
-## 交流群组
+## 安装说明
 
-Telegram群组：https://t.me/EllerCN
+一键安装：
+
+docker run -d --restart=always --name=mtproxy -p 80:80 -p 443:443 ellermister/nginx-mtproxy:latest
+--------------------------------------------------
+查询配置：
+
+docker logs mtproxy
+--------------------------------------------------
+认证页面:
+
+http://IP:80/add.php
 
 
 
